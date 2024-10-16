@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Non-Interactive UI</title>
+    <style>
+        /* Ensuring the content is non-obtrusive */
+        body {
+            pointer-events: none; /* Disable pointer events */
+            opacity: 0; /* Make the iframe completely invisible */
+        }
+    </style>
 </head>
 <body>
-    <h1>JavaScript is running!</h1>
-    <script type="text/javascript" src="main.js"></script>
+    <!-- Content that does not interfere -->
+    <script src="main.js"></script>
 </body>
 </html>
